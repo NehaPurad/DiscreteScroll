@@ -16,6 +16,7 @@
     </style>
 
 
+
     <style name="GalleryTheme" parent="AppTheme">
         <item name="colorAccent">@color/galleryAccent</item>
     </style>
