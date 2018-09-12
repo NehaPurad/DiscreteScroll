@@ -96,6 +96,7 @@
         android:textStyle="bold"
         android:textColor="#fff"
         android:text="Help Us Tailor Your Offer"/>
+        
 
     <Button
         android:id="@+id/test_button_text1"
