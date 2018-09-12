@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity implements DiscreteScrollVie
         arrayList=populateList();
         init();
 
+        
 //        onItemChanged(data.get(0));
 
 //        findViewById(R.id.item_btn_rate).setOnClickListener(this);
