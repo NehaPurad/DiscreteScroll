@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity implements DiscreteScrollVie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        ujfksjf
+
 
         dotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
 
