@@ -9,48 +9,67 @@
     tools:context=".MainActivity">
 
 
-    <com.example.bcs.discretescroll.DiscreteScrollView
-        android:id="@+id/item_picker"
+
+    <!--<com.example.bcs.discretescroll.DiscreteScrollView-->
+        <!--android:id="@+id/item_picker"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"/>-->
+    <me.crosswall.lib.coverflow.core.PagerContainer
+        android:id="@+id/pager_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"/>
+        android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"/>
 
-
+    </me.crosswall.lib.coverflow.core.PagerContainer>
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/circlePagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:fillColor="#f20606"
+        app:pageColor="#f20606"/>
 
     <LinearLayout
-        android:id="@+id/layoutDots"
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-    </LinearLayout>
-
-    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:orientation="horizontal"
        >
-
-
-
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_back"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:contentDescription="@string/content"
+            style="?android:attr/borderlessButtonStyle"
+            />
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recyclerView"
-        android:layout_marginEnd="30dp"
         android:orientation="horizontal"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
-
+        android:layout_weight="0.4"
+        >
     </android.support.v7.widget.RecyclerView>
 
-    </RelativeLayout>
-
-
+        <ImageButton
+            android:id="@+id/frontButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_front"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:contentDescription="@string/content"
+            style="?android:attr/borderlessButtonStyle"
+            />
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,8 +79,6 @@
         android:layout_marginTop="20dp"
         android:textColor="#000"
         android:textSize="20dp"/>
-
-
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="120dp" android:layout_width="match_parent"
@@ -72,7 +89,7 @@
         android:id="@+id/test_button_text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-  android:layout_centerHorizontal="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:textSize="20sp"
         android:fontFamily="@font/montserrat"
@@ -94,7 +111,4 @@
       />
 
 </RelativeLayout>
-
-
-
 </LinearLayout>
