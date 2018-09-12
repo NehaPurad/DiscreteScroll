@@ -8,8 +8,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-
     <!--<com.example.bcs.discretescroll.DiscreteScrollView-->
         <!--android:id="@+id/item_picker"-->
         <!--android:layout_width="match_parent"-->
@@ -111,6 +109,5 @@
         android:layout_below="@+id/test_button_text2"
         android:layout_centerHorizontal="true"
       />
-
 </RelativeLayout>
 </LinearLayout>
