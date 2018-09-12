@@ -57,6 +57,7 @@
         android:layout_weight="0.4"
         >
     </android.support.v7.widget.RecyclerView>
+        
 
         <ImageButton
             android:id="@+id/frontButton"
